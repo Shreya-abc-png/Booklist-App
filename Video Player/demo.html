@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>VIDEO PLAYER</title>
+</head>
+<body>
+
+    <div class="player-container">
+
+        <video src="videos/nature5.mp4"></video>
+        <div class="show-controls">
+            <div class="controls-container">
+                <div class="progress-range" id="progress-range">  <!--black bar--->
+                    <div class="progress-bar" id="progress-bar">  <!--orange bar-->
+
+                    </div>
+
+                    <div class="controls-group">
+                     <div class="controls-left">
+
+                        <div class="play-controls">
+                            <i class="fas fa-play" id="play"></i>
+                        </div>
+
+                        
+                           <div class="volume">
+                            <div class="volume-controls">
+                                <i class="fas fa-volume-up" id="volume"></i>
+                            </div>
+    
+                            <div class="volume-range" id="volume-range">
+                                <div class="volume-bar" id="volume-bar"></div>
+                            </div>
+                           </div>
+                       
+
+                    </div>
+
+
+
+
+
+
+                            <div class="controls-right">
+
+                                <div class="speed" id="myspeed">
+                                <select name="" id="speed">
+                                    <option value="0.5">0.5x</option>
+                                    <option value="0.75">0.75x</option>
+                                    <option value="1.0" selected>1.0x</option>
+                                    <option value="1.5">1.5x</option>
+                                    <option value="2.0">2.0x</option>
+                                </select>
+                            </div>
+
+
+                            <div class="time" id="time">
+                                <div class="current-time" id="current-time">
+                                    0.00/
+                                </div>
+                                <div class="duration" id="duration">1.46</div>
+                            </div>
+
+                            <div class="full-screen" id="full-screen">
+                                <i class="fas fa-expand"></i>
+                            </div>
+
+                            </div>
+                       
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
